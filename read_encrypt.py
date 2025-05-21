@@ -1,11 +1,11 @@
-import os
+
 import random
 import numpy as np
 
 
 
  
-with open('prova.exe', "rb") as f:
+with open('test_script.exe', "rb") as f:
     data = f.read()
  
 # Converte ogni byte in una stringa di 8 bit
@@ -30,12 +30,3 @@ f.close()
 
 
 
-
-'''
-random_payload = os.urandom(256)
-
-modified_data = bin + random_payload
-
-print(modified_data[-1000:])
-
-'''
